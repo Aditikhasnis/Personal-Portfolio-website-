@@ -1,0 +1,103 @@
+.portfolio__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+/* Styles for the button */
+.btnProject {
+    background-color: #221c22; /* Green background */
+    border: none; /* Remove default border */
+    color: white; /* White text */
+    padding: 1rem; /* Padding for button */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Inline block for spacing */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin for spacing */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(161, 45, 168, 0.2); /* Shadow effect */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+    outline: 1px solid #db80e0; 
+  }
+  
+  /* Hover effect */
+  .btnProject:hover {
+    background-color: #180818; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge button */
+  }
+  
+  /* Focus effect (for accessibility) */
+  .btnProject:focus {
+    outline: 1px solid #db80e0; /* Green outline */
+    outline-offset: 2px; /* Space between outline and button */
+  }
+
+.portfolio__item {
+    background: var(--color-bg-variant);
+    padding: 1.3rem;
+    border-radius: 1.2rem;
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease, background 0.3s ease;
+    transition: 0.3s ease-in-out;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--color-white);
+}
+
+.portfolio__item:hover {
+    border-color: var(--color-white);
+    background: transparent;
+    transform: scale(1.05);
+}
+
+.portfolio__item-image {
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+
+@media screen and (max-width:1024px) {
+    .portfolio__container{
+        grid-template-columns:repeat(1,1fr);
+        gap: 1rem;
+    }
+    .portfolio__item {
+     width: 70%;
+     margin-left: 10rem;
+     
+     
+
+    }
+    #Projects{
+        height: 250vh;
+    }
+}
+
+
+@media screen and (max-width:600px)
+{
+    /* .portfolio__container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1 rem;
+        
+    } */
+    /* .portfolio__item{
+        margin-right: 10rem;
+    }
+    #Projects{
+        height: 250vh;
+    } */
+
+
+
+     .portfolio__item{
+        margin-left: 5rem;
+        width: 70%;
+    }
+
+    h2{
+        text-align: center;
+    }
+}

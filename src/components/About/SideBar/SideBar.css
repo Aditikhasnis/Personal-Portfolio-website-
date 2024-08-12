@@ -1,0 +1,231 @@
+/* Styles for the sidebar */
+.sidebar {
+    width: 200px; /* Set the width of the sidebar */
+ /* From https://css.glass */
+background: rgba(255, 255, 255, 0.996);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.3px);
+-webkit-backdrop-filter: blur(7.3px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+  /* Background color for the sidebar */
+    padding: 1rem; /* Padding inside the sidebar */
+    border-right: 1px solid #ddd;  /* Border between sidebar and content */
+    height: 100vh; /* Full height of the viewport */
+    position: flex; /* Fix the sidebar to the left */
+    top: 300rem; /* Adjust this value to move the sidebar down */
+    left: 0; /* Fix the sidebar to the left */
+    display: flex; /* Use Flexbox for vertical alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .sidebar ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0rem; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    width: 100%; /* Ensure ul takes full width */
+  }
+  
+  .sidebar ul li {
+    margin: 10rem 0; /* Space between list items */
+    display: flex; /* Use Flexbox for centering content within li */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    width: 100%; /* Ensure li takes full width */
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #0f0505; /* Color for the links */
+    font-weight: bold; /* Bold text for the links */
+    display: inline-block; /* Ensure links align correctly */
+  }
+  
+  .sidebar ul li a.active {
+    color: #ab549f; /* Color for the active link */
+  }
+  #education {
+    margin-top: 2.5rem; /* Adjust the value as needed */
+  }
+  .expected{
+    margin-left: -35px; /* Adjust this value as needed to move the element to the left */
+  }
+  .Internship{
+    margin: auto;
+    margin-left: -95px;
+  }
+
+  .pes {
+    width: 10%;
+    height: auto;
+   
+    border-radius: 12rem;
+  }
+  #skills{
+    margin-top: 4rem;
+    gap: 1rem;
+  }
+
+.timeline-content{
+    display: flex;
+    align-items: center; 
+    position: relative;
+    gap: 0.51rem;
+    padding:10px 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--color-white);
+    transition: 0.3s ease-in-out;
+    border-radius: 25px;
+}
+.timeline-content:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--color-white);
+}
+
+.kle{
+    width: 10%;
+    height: 20%;
+   
+    border-radius: 12rem;
+}
+
+.bips{
+    width: 20%;
+    height: 20%;
+   
+    border-radius: 12rem;
+}
+.ieee{
+    top:0;
+}
+.timeline-item{
+top: 1rem;
+max-width: 1110px;
+margin: auto;
+/* display: flex;
+flex-wrap: wrap;
+position: relative; */
+position: relative;
+margin-bottom:20px ;
+width:100%;
+
+}
+.timeline-item-Exp{
+    top: 5rem;
+    max-width: 1110px;
+    margin: auto;
+    /* display: flex;
+    flex-wrap: wrap;
+    position: relative; */
+    position: relative;
+    margin-bottom:20px ;
+    width:100%;
+    gap: 1rem;
+    
+    }
+.timeline-item::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    left: calc(50%-1px);
+}
+
+/* .timeline-dot{
+    height: 21px;
+    width: 21px;
+    background-color: var(--color-white);
+    box-shadow: 0 0 25px var(--color-white),
+                0 0 50px var(--color-white);
+    position:absolute;
+    left: calc(50%-10px);
+    border-radius: 50%;
+    
+} */
+ul {
+    
+    list-style-type: disc; /* This makes the list items display as bullets */
+    margin-left: 1.5rem; /* Adds some margin to the left to indent the list */
+    padding-left: 0; /* Removes any default padding */
+  }
+  
+  ul li {
+    margin-bottom: 1rem; /* Adds some space between the list items */
+    font-size: 1rem; /* Adjust the font size if needed */
+    color: #efeaea; /* Adjust the text color if needed */
+    line-height: 1.5; /* Adjusts the line height for better readability */
+  }
+.timeline-date{
+    font-size: 20px;
+    font-weight: 800px;
+    color: white;
+    position: relative;
+    display: flex;
+    left: 650px; /* Aligns the date to the right */
+    top: 0; 
+}
+::-webkit-scrollbar{
+    width:13px
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--color-white);
+
+}
+
+@media screen and (max-width:600px) {
+  .sidebar{
+    width: 100px;
+    object-fit: fill;
+    height: 100vh;
+    top: 100rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .timeline-content{
+    display: flex;
+    align-items: center; 
+    position: relative;
+    gap: 0.1rem;
+    padding:10px 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--color-white);
+    transition: 0.3s ease-in-out;
+    border-radius: 25px;
+    width: 150%;
+    height: auto;
+
+}
+
+.timeline-content{
+  width: 300%;
+  height:50%;
+  margin-left:0rem ;
+  margin-right: 10rem;
+  gap: 1rem;
+}
+.timeline-item-Exp{
+  width: 30%;
+  margin-left: 0.4rem;
+  gap: 2rem;
+}
+.timeline-date{
+  left:100px;
+  font-size: 15px;
+  bottom: 3rem;
+  gap:1rem;
+
+}
+
+/* @media screen  and (max-width:1024px){
+  
+}
+
+@media screen  and (max-width:600px){
+  
+} */
+
+}

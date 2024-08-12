@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f404f971.css",
+    "main.js": "/static/js/main.23fa449e.js",
+    "static/media/SocialDistancing.png": "/static/media/SocialDistancing.0999470fae2a1cf81dab.png",
+    "static/media/tourBuddy.png": "/static/media/tourBuddy.66dcd95089f673806ab5.png",
+    "static/media/Award.png": "/static/media/Award.7166c08c8b0213aeedd2.png",
+    "static/media/Connit.png": "/static/media/Connit.89db2523a1aa930fa2c7.png",
+    "static/media/Interior design.png": "/static/media/Interior design.a03e8b2b022a56aa5f1c.png",
+    "static/media/Front.png": "/static/media/Front.4644d0e4955631c204db.png",
+    "static/media/portfolio.png": "/static/media/portfolio.809f2579ce21b68e4f2b.png",
+    "static/media/GitSumm.png": "/static/media/GitSumm.f4642e760488f1c3b992.png",
+    "static/media/Screenshot 2024-07-14 at 2.14.33 PM.png": "/static/media/Screenshot 2024-07-14 at 2.14.33 PM.8d88f823e9e0421fe1d9.png",
+    "static/media/Aditi Resume final.pdf": "/static/media/Aditi Resume final.7f63b06463ecc274ae93.pdf",
+    "static/media/other.jpg": "/static/media/other.88db75ba915e584827d1.jpg",
+    "static/media/Fastion.png": "/static/media/Fastion.3f7b59831c5e0515049b.png",
+    "static/media/python.png": "/static/media/python.9944a9d0a870d0c1ff80.png",
+    "static/media/ZPQNq5AG_400x400.jpg": "/static/media/ZPQNq5AG_400x400.bf558e70f43a2f68da2c.jpg",
+    "static/media/java.png": "/static/media/java.757c52fd06b4fc07c83f.png",
+    "index.html": "/index.html",
+    "main.f404f971.css.map": "/static/css/main.f404f971.css.map",
+    "main.23fa449e.js.map": "/static/js/main.23fa449e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f404f971.css",
+    "static/js/main.23fa449e.js"
+  ]
+}

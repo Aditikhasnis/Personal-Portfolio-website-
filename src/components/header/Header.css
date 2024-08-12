@@ -1,0 +1,188 @@
+header{
+    height: 100vh;
+    padding-top: 7rem ;
+    overflow: hidden;
+
+
+}
+.profile-details-role{
+    font-size: x-small;
+}
+.mode{
+    
+    top: 0;
+    right: 0;
+    margin-top: 0rem;
+    height: 5rem;
+    width: auto; /* Adjust as needed */
+    padding: 1rem;
+    margin-right: 2rem; /* Adjust for desired distance from right edge */
+    font-size: large;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    background-color: #0c0a0a; /* Adjust as needed */
+    display: flex;
+
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter {
+    color: #fff;
+    font-family: "Poppins",sans-serif;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s forwards
+  }
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; } /* Adjust width to match character count */
+}
+
+@keyframes blinking {
+    from { border-color: transparent; }
+    to { border-color: orange; }
+}
+
+.typed-out {
+    overflow: hidden;
+    border-right: .15em solid orange; /* Creates the blinking cursor effect */
+    white-space: nowrap; /* Keeps text on one line */
+    animation: typing 4s steps(33, end) forwards;
+    font-size: 1.6rem;
+    width: 33ch; /* Matches the number of characters */
+}
+
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: rgb(4, 3, 3); }
+}
+
+
+.typing-container {
+    display: inline-block;
+    overflow: hidden; /* Hides the text outside of the container */
+    white-space: nowrap; /* Keeps text on one line */
+    border-right: 2px solid; /* Creates the blinking cursor effect */
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.header__container{
+    text-align: left;
+    height:100%;
+    position: relative;
+}
+
+.cta {
+    margin-top: 100px; /* Adds a gap at the top */
+    display: flex;
+    gap: 1.2rem; /* Note: There was a typo with extra space */
+    justify-content: left;
+}
+
+.header__social{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left:0;
+    bottom: 3rem;
+    size: 100px;
+}
+.header__social::after{
+    content: ' ';
+    width: 3px;
+    height: 3rem;
+    background: var(--color-primary);
+
+}
+
+.me {
+    background: var(--color-primary);
+    width: 20rem; /* Fixed spacing */
+    height: 25rem; /* Fixed spacing */
+    position: absolute;
+    right: 0; /* Align to the right */
+    margin-top: 0rem; /* Fixed spacing */
+    border-radius: 12rem 12rem 0 0; /* Simplified */
+    overflow: hidden;
+    top: 0.5rem
+}
+
+.me img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.scroll__down{
+    position: absolute;
+    right: -3.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+   
+    font-size: 90rem;
+}
+
+@media screen and (max-width:1024px) {
+    header{
+        height:68vh;
+    }
+}
+
+@media screen and (max-width:600px) {
+    header{
+        height:100vh;
+        overflow: hidden;
+    }
+    .me{
+        background: var(--color-primary);
+        width: 10rem; /* Fixed spacing */
+        height: 10rem; /* Fixed spacing */
+        position: absolute;
+        right: 8.9rem; /* Align to the right */
+        margin-top: 0px; /* Fixed spacing */
+        border-radius: 6rem ; /* Simplified */
+        overflow: hidden;
+        top: 16rem;
+       
+    }
+    .me img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+       
+        
+
+    }
+    .cta {
+        margin-top: 350px; /* Adds a gap at the top */
+        display: flex;
+        gap: 1.2rem; /* Note: There was a typo with extra space */
+       
+        margin-left: 0rem;
+        justify-content: left;
+    }
+    .profile-details-role{
+        font-size: xx-small;
+        top:10rem;
+        width: auto;
+
+    }
+    .profile-details-role h1{
+        font-size: medium;
+    }
+    .typewriter h1{
+        font-size: 1rem;
+        letter-spacing: 0.9rem;
+        margin-left: 0rem;
+    }
+}
+

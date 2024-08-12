@@ -1,0 +1,33 @@
+.connit-img{
+    display: grid;
+    grid-template-columns: repeat(2, 0.2fr);
+    gap: 2.5rem;
+    top: 50rem;
+    margin-top: 3rem;
+
+}
+.arrow{
+    left: 950px; 
+    position: relative;
+    width: 100%;
+}
+#Publications{
+    height: 60vh;
+}
+@media screen and (max-width:1204px) {
+    /* .timeline-item{
+        width: 65%;
+        height:50%;
+        margin-left:0rem ;
+    } */
+    #Publications{
+        height: 170vh;
+    }
+}
+@media screen and (max-width:600px) {
+.timeline-item{
+    width: 30%;
+   
+    margin-left:1rem ;
+}
+} 
