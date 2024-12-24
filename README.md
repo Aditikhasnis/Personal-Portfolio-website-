@@ -1,8 +1,12 @@
 # To run in editor: 
+```
 npm start
+```
 
 # To deploy in netlify: 
-npm run build 
+```
+npm run build
+```
 
 
 # Getting Started with Create React App
